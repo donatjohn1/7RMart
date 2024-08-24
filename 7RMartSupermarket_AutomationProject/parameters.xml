@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="generateTestReport.Listeners" />
+	</listeners>
+	<parameter name="browser" value="Chrome"></parameter>
+	<parameter name="User Name" value="admin"></parameter>
+	<parameter name="Password" value="admin"></parameter>
+	<test thread-count="5" name="TestngFile">
+		<classes>
+			<class name="testScript.LoginPage_Test">
+				<methods>
+					<include name="verifyUserIsAbleToLoginUsingValidCredentials"></include>
+				</methods>
+			</class>
+			<class name="testScript.SearchInSubCatagoryList_Test">
+				<methods>
+					<include name="verifyUserIsAbleToSearchSubCatagory"></include>
+				</methods>
+			</class>
+			<class name="testScript.LoginPage_Test">
+				<methods>
+					<include name="verifyUserIsAbleToAddNewSubCatagory"></include>
+				</methods>
+			</class>
+			<class name="testScript.NewAdminUser_Test">
+				<methods>
+					<include name="verifyUserIsAbleToAddNewUser"></include>
+				</methods>
+			</class>
+			<class name="testScript.SearchCatagory_Test">
+				<methods>
+					<include name="verifyUserAbleToSearchCategory"></include>
+				</methods>
+			</class>
+
+			<class name="testScript.SearchAdminUser_Test">
+				<methods>
+					<include name="verifyUserIsAbleToSearchUser"></include>
+				</methods>
+			</class>
+			<class name="testScript.EditUserInformation_Test">
+				<methods>
+					<include name="verifyUserIsAbleToEditUserInformation"></include>
+				</methods>
+			</class>
+
+			<class name="testScript.DeleteAdminUser_Test">
+				<methods>
+					<include name="verifyUserIsAbleToDeleteUserFromList"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	TestngFile -->
+</suite> <!--
+Suite -->

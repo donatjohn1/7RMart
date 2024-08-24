@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Grouping">
+	<parameter name="browser" value="Chrome"></parameter>
+	<parameter name="Invalid User Name" value="2345678"></parameter>
+	<parameter name="Password" value="admin"></parameter>
+	<listeners>
+		<listener class-name="generateTestReport.Listeners" />
+	</listeners>
+	<test thread-count="5" name="Grouping.xml">
+		<groups>
+			<run>
+				<include name="Smoke testing"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="testScript.LoginPage_Test">
+			</class>
+		</classes>
+	</test> <!--
+	TestngFile -->
+</suite> <!--
+Suite -->
