@@ -9,13 +9,13 @@
   </listeners>
   <test thread-count="5" name="TestngFile(failed)">
     <classes>
-      <class name="testScript.SearchInSubCatagoryList_Test">
+      <class name="testScript.EditUserInformation_Test">
         <methods>
           <include name="initialiseBrowser"/>
+          <include name="verifyUserIsAbleToEditUserInformation" invocation-numbers="0"/>
           <include name="afterMethod"/>
-          <include name="verifyUserIsAbleToSearchSubCatagory" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testScript.SearchInSubCatagoryList_Test -->
+      </class> <!-- testScript.EditUserInformation_Test -->
       <class name="testScript.SearchCatagory_Test">
         <methods>
           <include name="initialiseBrowser"/>
@@ -23,20 +23,13 @@
           <include name="verifyUserAbleToSearchCategory"/>
         </methods>
       </class> <!-- testScript.SearchCatagory_Test -->
-      <class name="testScript.EditUserInformation_Test">
+      <class name="testScript.SearchInSubCatagoryList_Test">
         <methods>
           <include name="initialiseBrowser"/>
           <include name="afterMethod"/>
-          <include name="verifyUserIsAbleToEditUserInformation" invocation-numbers="0"/>
+          <include name="verifyUserIsAbleToSearchSubCatagory" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testScript.EditUserInformation_Test -->
-      <class name="testScript.NewAdminUser_Test">
-        <methods>
-          <include name="initialiseBrowser"/>
-          <include name="afterMethod"/>
-          <include name="verifyUserIsAbleToAddNewUser" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- testScript.NewAdminUser_Test -->
+      </class> <!-- testScript.SearchInSubCatagoryList_Test -->
       <class name="testScript.SearchAdminUser_Test">
         <methods>
           <include name="initialiseBrowser"/>
@@ -44,6 +37,13 @@
           <include name="verifyUserIsAbleToSearchUser" invocation-numbers="0"/>
         </methods>
       </class> <!-- testScript.SearchAdminUser_Test -->
+      <class name="testScript.NewAdminUser_Test">
+        <methods>
+          <include name="initialiseBrowser"/>
+          <include name="afterMethod"/>
+          <include name="verifyUserIsAbleToAddNewUser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testScript.NewAdminUser_Test -->
     </classes>
   </test> <!-- TestngFile(failed) -->
 </suite> <!-- Failed suite [Suite] -->

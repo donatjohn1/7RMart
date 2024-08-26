@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="7" total="10" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-26T08:45:04 IST" name="Cross Browser Testing" finished-at="2024-08-26T08:45:19 IST" duration-ms="14581">
+  <suite started-at="2024-08-24T10:42:15 IST" name="Cross Browser Testing" finished-at="2024-08-24T10:42:29 IST" duration-ms="13809">
     <groups>
       <group name="Smoke testing">
-        <method signature="LoginPage_Test.verifyUserIsAbleToLoginUsingInvalidUsernameValidPassword(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@18f8cd79]" name="verifyUserIsAbleToLoginUsingInvalidUsernameValidPassword" class="testScript.LoginPage_Test"/>
+        <method signature="LoginPage_Test.verifyUserIsAbleToLoginUsingInvalidUsernameValidPassword(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@7b4c50bc]" name="verifyUserIsAbleToLoginUsingInvalidUsernameValidPassword" class="testScript.LoginPage_Test"/>
       </group> <!-- Smoke testing -->
     </groups>
-    <test started-at="2024-08-26T08:45:04 IST" name="Chrome Test" finished-at="2024-08-26T08:45:13 IST" duration-ms="8848">
+    <test started-at="2024-08-24T10:42:15 IST" name="Chrome Test" finished-at="2024-08-24T10:42:22 IST" duration-ms="7353">
       <class name="testScript.LoginPage_Test">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testScript.LoginPage_Test@18f8cd79]" started-at="2024-08-26T08:45:04 IST" name="initialiseBrowser" finished-at="2024-08-26T08:45:10 IST" duration-ms="5452" status="PASS">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testScript.LoginPage_Test@7b4c50bc]" started-at="2024-08-24T10:42:15 IST" name="initialiseBrowser" finished-at="2024-08-24T10:42:19 IST" duration-ms="4035" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,7 +21,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyUserIsAbleToLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@18f8cd79]" started-at="2024-08-26T08:45:10 IST" name="verifyUserIsAbleToLoginUsingValidCredentials" finished-at="2024-08-26T08:45:11 IST" duration-ms="974" status="PASS">
+        <test-method signature="verifyUserIsAbleToLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@7b4c50bc]" started-at="2024-08-24T10:42:19 IST" name="verifyUserIsAbleToLoginUsingValidCredentials" finished-at="2024-08-24T10:42:20 IST" duration-ms="808" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToLoginUsingValidCredentials -->
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testScript.LoginPage_Test@18f8cd79]" started-at="2024-08-26T08:45:11 IST" name="initialiseBrowser" finished-at="2024-08-26T08:45:12 IST" duration-ms="1834" status="PASS">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testScript.LoginPage_Test@7b4c50bc]" started-at="2024-08-24T10:42:20 IST" name="initialiseBrowser" finished-at="2024-08-24T10:42:22 IST" duration-ms="1957" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyUserIsAbleToLoginUsingInvalidUsernameValidPassword(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@18f8cd79]" started-at="2024-08-26T08:45:12 IST" name="verifyUserIsAbleToLoginUsingInvalidUsernameValidPassword" finished-at="2024-08-26T08:45:13 IST" duration-ms="499" status="PASS">
+        <test-method signature="verifyUserIsAbleToLoginUsingInvalidUsernameValidPassword(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@7b4c50bc]" started-at="2024-08-24T10:42:22 IST" name="verifyUserIsAbleToLoginUsingInvalidUsernameValidPassword" finished-at="2024-08-24T10:42:22 IST" duration-ms="508" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,9 +66,9 @@
         </test-method> <!-- verifyUserIsAbleToLoginUsingInvalidUsernameValidPassword -->
       </class> <!-- testScript.LoginPage_Test -->
     </test> <!-- Chrome Test -->
-    <test started-at="2024-08-26T08:45:13 IST" name="Edge Test" finished-at="2024-08-26T08:45:19 IST" duration-ms="5294">
+    <test started-at="2024-08-24T10:42:23 IST" name="Edge Test" finished-at="2024-08-24T10:42:29 IST" duration-ms="5983">
       <class name="testScript.LoginPage_Test">
-        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testScript.LoginPage_Test@6531a794]" started-at="2024-08-26T08:45:13 IST" name="initialiseBrowser" finished-at="2024-08-26T08:45:18 IST" duration-ms="4640" status="PASS">
+        <test-method is-config="true" signature="initialiseBrowser(java.lang.String)[pri:0, instance:testScript.LoginPage_Test@24959ca4]" started-at="2024-08-24T10:42:23 IST" name="initialiseBrowser" finished-at="2024-08-24T10:42:28 IST" duration-ms="4977" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialiseBrowser -->
-        <test-method signature="verifyUserIsAbleToLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@6531a794]" started-at="2024-08-26T08:45:18 IST" name="verifyUserIsAbleToLoginUsingValidCredentials" finished-at="2024-08-26T08:45:19 IST" duration-ms="649" status="PASS">
+        <test-method signature="verifyUserIsAbleToLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@24959ca4]" started-at="2024-08-24T10:42:28 IST" name="verifyUserIsAbleToLoginUsingValidCredentials" finished-at="2024-08-24T10:42:29 IST" duration-ms="1000" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,11 +95,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserIsAbleToLoginUsingValidCredentials -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.LoginPage_Test@6531a794]" started-at="2024-08-26T08:45:19 IST" name="afterMethod" finished-at="2024-08-26T08:45:19 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testScript.LoginPage_Test@24959ca4]" started-at="2024-08-24T10:42:29 IST" name="afterMethod" finished-at="2024-08-24T10:42:29 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserIsAbleToLoginUsingValidCredentials status=SUCCESS method=LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@6531a794] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserIsAbleToLoginUsingValidCredentials status=SUCCESS method=LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:testScript.LoginPage_Test@24959ca4] output={null}]]]>
               </value>
             </param>
           </params>
