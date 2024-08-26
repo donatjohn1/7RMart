@@ -28,7 +28,7 @@ public class SearchAdminUser_Test extends Base {
 	  searchUser.enterUserName(searchUserName);
 	  searchUser.userType(srchUserType);
 	  searchUser.clickSearchButton();
-	  boolean isSearchDisplayed=searchUser.isSearchResultNotDisplayed();
+	  boolean isSearchDisplayed=searchUser.isSearchResultDisplayed();
 	  assertTrue(isSearchDisplayed,Constants.SEARCHUSERNOTFOUND);
 	  
   }

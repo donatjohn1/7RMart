@@ -18,7 +18,7 @@ public class SearchCatagory_Page {
 	@FindBy(xpath="//a[@href='javascript:void(0)']")WebElement clickSearch;
 	@FindBy(xpath="//input[@class='form-control']")WebElement categoryValueField;
 	@FindBy(xpath="//button[@type='submit']")WebElement clickSearchButton;
-	@FindBy(xpath="//center[text()='.........RESULT NOT FOUND.......']")WebElement searchNotFound; 
+	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']")WebElement searchFound; 
 
 	FileUpload_Utilities input=new FileUpload_Utilities();
 	public void goToCategory()
@@ -37,8 +37,8 @@ public class SearchCatagory_Page {
 	{
 		clickSearchButton.click();
 	}
-	public boolean isSearchResultNotDisplayed()
+	public boolean isSearchResultDisplayed()
 	{
-		return searchNotFound.isDisplayed();
+		return searchFound.isDisplayed();
 	}
 }
