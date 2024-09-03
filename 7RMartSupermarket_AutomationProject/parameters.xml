@@ -5,51 +5,11 @@
 		<listener class-name="generateTestReport.Listeners" />
 	</listeners>
 	<parameter name="browser" value="Chrome"></parameter>
-	<parameter name="User Name" value="admin"></parameter>
+	<parameter name="Invalid User Name" value="admin854"></parameter>
 	<parameter name="Password" value="admin"></parameter>
-	<test thread-count="5" name="TestngFile">
+	<test thread-count="5" name="Parameters">
 		<classes>
 			<class name="testScript.LoginPage_Test">
-				<methods>
-					<include name="verifyUserIsAbleToLoginUsingValidCredentials"></include>
-				</methods>
-			</class>
-			<class name="testScript.SearchInSubCatagoryList_Test">
-				<methods>
-					<include name="verifyUserIsAbleToSearchSubCatagory"></include>
-				</methods>
-			</class>
-			<class name="testScript.LoginPage_Test">
-				<methods>
-					<include name="verifyUserIsAbleToAddNewSubCatagory"></include>
-				</methods>
-			</class>
-			<class name="testScript.NewAdminUser_Test">
-				<methods>
-					<include name="verifyUserIsAbleToAddNewUser"></include>
-				</methods>
-			</class>
-			<class name="testScript.SearchCatagory_Test">
-				<methods>
-					<include name="verifyUserAbleToSearchCategory"></include>
-				</methods>
-			</class>
-
-			<class name="testScript.SearchAdminUser_Test">
-				<methods>
-					<include name="verifyUserIsAbleToSearchUser"></include>
-				</methods>
-			</class>
-			<class name="testScript.EditUserInformation_Test">
-				<methods>
-					<include name="verifyUserIsAbleToEditUserInformation"></include>
-				</methods>
-			</class>
-
-			<class name="testScript.DeleteAdminUser_Test">
-				<methods>
-					<include name="verifyUserIsAbleToDeleteUserFromList"></include>
-				</methods>
 			</class>
 		</classes>
 	</test> <!--
