@@ -5,9 +5,13 @@
     <classes>
       <class name="testScript.LoginPage_Test">
         <methods>
+          <include name="verifyUserIsAbleToLoginUsinginvalidCredentials"/>
+          <include name="verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword"/>
           <include name="initialiseBrowser"/>
+          <include name="verifyUserIsAbleToLoginUsingValidCredentials"/>
           <include name="afterMethod"/>
           <include name="verifyUserIsAbleToLoginUsingInvalidUsernameValidPassword"/>
+          <include name="f"/>
         </methods>
       </class> <!-- testScript.LoginPage_Test -->
     </classes>

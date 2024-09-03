@@ -24,30 +24,36 @@ public class NewAdminUser_Page {
 	@FindBy(xpath="//select[@id='user_type']")WebElement newUserTypefield;
 	@FindBy(xpath="//button[@name='Create']")WebElement saveNewUserButton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert;
-	public void openAdminUserPage()
+	public NewAdminUser_Page openAdminUserPage()
 	{
 		adminUserPageLink.click();
+		return this;
 	}
-	public void clickaddNewAdminUserButton()
+	public NewAdminUser_Page clickaddNewAdminUserButton()
 	{
 		addNewAdminUserButton.click();
+		return this;
 	}
-	public void enterNewUserNameInField(String newUserName)
+	public NewAdminUser_Page enterNewUserNameInField(String newUserName)
 	{
 		newUserNameField.sendKeys(newUserName);
+		return this;
 	}
-	public void enterNewPasswordInField(String newPassword)
+	public NewAdminUser_Page enterNewPasswordInField(String newPassword)
 	{
 		newPasswordField.sendKeys(newPassword);
+		return this;
 	}
-	public void selectUserType(String userType)
+	public NewAdminUser_Page selectUserType(String userType)
 	{
 		Page_Utilities page=new Page_Utilities();
 		page.selectMethord(newUserTypefield, userType);
+		return this;
 	}
-	public void clickSaveButton()
+	public NewAdminUser_Page clickSaveButton()
 	{
 		saveNewUserButton.click();
+		return this;
 	}
 	public boolean isAlertDisplayed()
 	{

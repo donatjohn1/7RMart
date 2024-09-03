@@ -6,9 +6,9 @@
 		<parameter name="User Name" value="admin"></parameter>
 		<parameter name="Password" value="admin"></parameter>
 		<classes>
-			<class name="testScript.LoginPage_Test">
+			<class name="testScript.NewAdminUser_Test">
 			<methods>
-				<include name="verifyUserIsAbleToLoginUsingValidCredentials">
+				<include name="verifyUserIsAbleToAddNewUser">
 				</include>
 			</methods>
 			</class>

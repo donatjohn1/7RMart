@@ -23,9 +23,9 @@ public class NewAdminUser_Test extends Base{
 	  NewAdminUser_Page adminUserPage=new NewAdminUser_Page(driver);
 	  adminUserPage.openAdminUserPage();
 	  adminUserPage.clickaddNewAdminUserButton();
-	  String newUserNameValue=ExcelUtilities.getStringData(1,0,"NewAdminUser");
-	  String newPasswordValue=ExcelUtilities.getStringData(1,1,"NewAdminUser");
-	  String newUserTypeValue=ExcelUtilities.getStringData(1,2,"NewAdminUser");
+	  String newUserNameValue=ExcelUtilities.getStringData(3,0,"NewAdminUser");
+	  String newPasswordValue=ExcelUtilities.getStringData(3,1,"NewAdminUser");
+	  String newUserTypeValue=ExcelUtilities.getStringData(3,2,"NewAdminUser");
 	  adminUserPage.enterNewUserNameInField(newUserNameValue);
 	  adminUserPage.enterNewPasswordInField(newPasswordValue);
 	  adminUserPage.selectUserType(newUserTypeValue);
