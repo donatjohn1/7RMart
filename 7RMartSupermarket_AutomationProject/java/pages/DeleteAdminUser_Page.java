@@ -15,16 +15,14 @@ public class DeleteAdminUser_Page {
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin']//i[@class='fas fa-arrow-circle-right']")WebElement adminUserPageLink;
 	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']/tbody/tr[15]/td[5]//i[@class='fas fa-trash-alt']")WebElement deleteAdminUserButton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert;
-	public DeleteAdminUser_Page openAdminUserPageDelete()
+	public void openAdminUserPage()
 	{
 		adminUserPageLink.click();
-		return this;
 	}
-	public DeleteAdminUser_Page clickDeleteAdminUserButton()
+	public void clickDeleteAdminUserButton()
 	{
 		deleteAdminUserButton.click();
 		driver.switchTo().alert().accept();
-		return new DeleteAdminUser_Page(driver);
 	}
 	public boolean isAlertDisplayed()
 	{

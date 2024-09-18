@@ -20,7 +20,7 @@ WebDriver driver;
 	@FindBy(xpath="//input[@id='un']")WebElement userNameSearchField;
 	@FindBy(xpath="//select[@id='ut']")WebElement userTypesearchField;
 	@FindBy(xpath="//button[@value='sr']")WebElement userSearchButton;
-	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']")WebElement searchFound; 
+	@FindBy(xpath="//center[text()='.........RESULT NOT FOUND.......']")WebElement searchNotFound; 
 	public void openAdminUserPage()
 	{
 		adminUserPageLink.click();
@@ -42,8 +42,8 @@ WebDriver driver;
 	{
 		userSearchButton.click();	
 	}
-	public boolean isSearchResultDisplayed()
+	public boolean isSearchResultNotDisplayed()
 	{
-		return searchFound.isDisplayed();
+		return searchNotFound.isDisplayed();
 	}
 }

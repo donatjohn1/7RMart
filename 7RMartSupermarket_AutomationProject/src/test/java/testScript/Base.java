@@ -30,6 +30,7 @@ public class Base {
   @BeforeMethod(alwaysRun=true)
   @Parameters("browser")
   public void initialiseBrowser(String browser) throws Exception {
+	  //driver=new ChromeDriver();
 	  try {
 			properties = new Properties();
 			fis = new FileInputStream(Constants.CONFIGFILE);
@@ -54,11 +55,11 @@ public class Base {
 
   @AfterMethod
   public void afterMethod(ITestResult itResult) throws IOException {
-	  //driver.close();
 	  if (itResult.getStatus() == ITestResult.FAILURE) {
 		  Screenshot_Utilities sc = new Screenshot_Utilities();
 			sc.captureFailureScreenShot(driver, itResult.getName());
 		}
+	  driver.quit();
   }
 
 }
