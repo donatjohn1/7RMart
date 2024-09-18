@@ -28,7 +28,7 @@ public class SearchInSubCatagoryList_Test extends Base{
 	  search.selectCatagoryValue(categoryValue);
 	  search.enterSubCatagory(subCatagoryValue);
 	  search.searchSubCatagory();
-	  boolean isSearchDisplayed=search.isSearchResultDisplayed();
+	  boolean isSearchDisplayed=search.isSearchResultNotDisplayed();
 	  assertTrue(isSearchDisplayed,Constants.SEARCHSUBCATEGORYNOTFOUND);
   }
 }

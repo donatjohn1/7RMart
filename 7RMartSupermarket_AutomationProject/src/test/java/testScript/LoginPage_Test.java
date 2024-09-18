@@ -33,12 +33,8 @@ public class LoginPage_Test extends Base {
 	{
 		String userNameValue=ExcelUtilities.getStringData(5,0,"Login_Page");
 		String passwordValue=ExcelUtilities.getStringData(5,1,"Login_Page");
-		String newUserNameValue=ExcelUtilities.getStringData(1,0,"NewAdminUser");
-		  String newPasswordValue=ExcelUtilities.getStringData(1,1,"NewAdminUser");
-		  String newUserTypeValue=ExcelUtilities.getStringData(1,2,"NewAdminUser");
 		loginPage = new Login_Page(driver);
-		adminUser = loginPage.enterUserNameField(userNameValue).enterPasswordField(passwordValue).clickSubmitButton()
-				.openAdminUserPage().clickaddNewAdminUserButton().enterNewUserNameInField(newUserNameValue).enterNewPasswordInField(newPasswordValue).selectUserType(newUserTypeValue).clickSaveButton();
+		 loginPage.enterUserNameField(userNameValue).enterPasswordField(passwordValue).clickSubmitButton();
 		boolean isHomePageIsLoaded = loginPage.isDashboardisLoaded();
 		assertTrue(isHomePageIsLoaded, Constants.ERRORMSGFORLOGIN);
 	}

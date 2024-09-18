@@ -12,24 +12,10 @@
       <class name="testScript.LoginPage_Test">
         <methods>
           <include name="initialiseBrowser"/>
-          <include name="verifyUserIsAbleToLoginUsingValidCredentials" invocation-numbers="0"/>
+          <include name="verifyUserIsAbleToLoginUsingValidCredentials" invocation-numbers="0 0 0"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- testScript.LoginPage_Test -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
-  <test thread-count="5" parallel="tests" name="Edge Test(failed)">
-    <parameter name="User Name" value="admin"/>
-    <parameter name="browser" value="Edge"/>
-    <parameter name="Password" value="admin"/>
-    <classes>
-      <class name="testScript.LoginPage_Test">
-        <methods>
-          <include name="initialiseBrowser"/>
-          <include name="afterMethod"/>
-          <include name="verifyUserIsAbleToLoginUsingValidCredentials" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- testScript.LoginPage_Test -->
-    </classes>
-  </test> <!-- Edge Test(failed) -->
 </suite> <!-- Failed suite [Multi Browser Testing] -->

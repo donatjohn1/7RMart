@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="Invalid User Name" value="admin854"/>
-  <parameter name="browser" value="Chrome"/>
-  <parameter name="Password" value="admin"/>
   <listeners>
     <listener class-name="generateTestReport.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Parameters(failed)">
+  <test thread-count="5" name="TestngFile(failed)">
+    <parameter name="Search UserName" value="Dona1234"/>
+    <parameter name="User Name" value="admin"/>
+    <parameter name="New User Name" value="Dona1234"/>
+    <parameter name="Catagory Value" value="Fruits"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="User Type" value="Admin"/>
+    <parameter name="Search User Type" value="Admin"/>
+    <parameter name="New Password" value="Dona1234"/>
+    <parameter name="Password" value="admin"/>
     <classes>
-      <class name="testScript.LoginPage_Test">
+      <class name="testScript.SearchAdminUser_Test">
         <methods>
-          <include name="verifyUserIsAbleToLoginUsinginvalidCredentials"/>
-          <include name="verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword" invocation-numbers="0"/>
           <include name="initialiseBrowser"/>
-          <include name="verifyUserIsAbleToLoginUsingValidCredentials"/>
           <include name="afterMethod"/>
+          <include name="verifyUserIsAbleToSearchUser" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testScript.LoginPage_Test -->
+      </class> <!-- testScript.SearchAdminUser_Test -->
+      <class name="testScript.NewAdminUser_Test">
+        <methods>
+          <include name="initialiseBrowser"/>
+          <include name="afterMethod"/>
+          <include name="verifyUserIsAbleToAddNewUser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testScript.NewAdminUser_Test -->
     </classes>
-  </test> <!-- Parameters(failed) -->
+  </test> <!-- TestngFile(failed) -->
 </suite> <!-- Failed suite [Suite] -->

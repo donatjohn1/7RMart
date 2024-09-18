@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>parallelTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 27 20:08:49 IST 2024</td>
+<td>Started on:</td><td>Fri Aug 23 21:17:58 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>24 seconds (24705 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23861 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -70,101 +70,10 @@ function toggleAllBoxes() {
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
-<tr>
-<td title='testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials()'><b>verifyUserIsAbleToLoginUsingValidCredentials</b><br>Test class: testScript.LoginPage_Test<br>Parameters: admin, admin</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class org.apache.poi.xssf.usermodel.XSSFWorkbook
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(LoginPage_Test.java:37)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoSuchMethodError: &apos;java.lang.ClassLoader[] org.apache.logging.log4j.util.LoaderUtil.getClassLoaders()&apos; [in thread &quot;TestNG-test=parallelTest-1&quot;]
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getServiceProviders(ThreadContextDataInjector.java:83)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.initServiceProviders(ThreadContextDataInjector.java:73)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getProviders(ThreadContextDataInjector.java:285)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.access$000(ThreadContextDataInjector.java:55)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector$ForCopyOnWriteThreadContextMap.&lt;init&gt;(ThreadContextDataInjector.java:226)
-	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createDefaultInjector(ContextDataInjectorFactory.java:94)
-	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createInjector(ContextDataInjectorFactory.java:71)
-	at org.apache.logging.log4j.core.lookup.ContextMapLookup.&lt;init&gt;(ContextMapLookup.java:34)
-	at org.apache.logging.log4j.core.lookup.Interpolator.&lt;init&gt;(Interpolator.java:126)
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.&lt;init&gt;(AbstractConfiguration.java:129)
-	at org.apache.logging.log4j.core.config.NullConfiguration.&lt;init&gt;(NullConfiguration.java:32)
-	at org.apache.logging.log4j.core.LoggerContext.&lt;clinit&gt;(LoggerContext.java:87)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.createContext(ClassLoaderContextSelector.java:248)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(ClassLoaderContextSelector.java:212)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:136)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:123)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:117)
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:150)
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
-	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
-	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:599)
-	at org.apache.poi.ooxml.POIXMLDocumentPart.&lt;clinit&gt;(POIXMLDocumentPart.java:56)
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(LoginPage_Test.java:37)
-	... 7 more
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1316720780", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1316720780'><pre>java.lang.NoClassDefFoundError: Could not initialize class org.apache.poi.xssf.usermodel.XSSFWorkbook
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(LoginPage_Test.java:37)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoSuchMethodError: &apos;java.lang.ClassLoader[] org.apache.logging.log4j.util.LoaderUtil.getClassLoaders()&apos; [in thread &quot;TestNG-test=parallelTest-1&quot;]
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getServiceProviders(ThreadContextDataInjector.java:83)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.initServiceProviders(ThreadContextDataInjector.java:73)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getProviders(ThreadContextDataInjector.java:285)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.access$000(ThreadContextDataInjector.java:55)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector$ForCopyOnWriteThreadContextMap.&lt;init&gt;(ThreadContextDataInjector.java:226)
-	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createDefaultInjector(ContextDataInjectorFactory.java:94)
-	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createInjector(ContextDataInjectorFactory.java:71)
-	at org.apache.logging.log4j.core.lookup.ContextMapLookup.&lt;init&gt;(ContextMapLookup.java:34)
-	at org.apache.logging.log4j.core.lookup.Interpolator.&lt;init&gt;(Interpolator.java:126)
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.&lt;init&gt;(AbstractConfiguration.java:129)
-	at org.apache.logging.log4j.core.config.NullConfiguration.&lt;init&gt;(NullConfiguration.java:32)
-	at org.apache.logging.log4j.core.LoggerContext.&lt;clinit&gt;(LoggerContext.java:87)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.createContext(ClassLoaderContextSelector.java:248)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(ClassLoaderContextSelector.java:212)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:136)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:123)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:117)
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:150)
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
-	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
-	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:599)
-	at org.apache.poi.ooxml.POIXMLDocumentPart.&lt;clinit&gt;(POIXMLDocumentPart.java:56)
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(LoginPage_Test.java:37)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	... 7 more
-</pre></div></td>
-<td>0</td>
-<td>testScript.LoginPage_Test@2438dcd</td></tr>
 <tr>
 <td title='testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword()'><b>verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword</b><br>Test class: testScript.LoginPage_Test<br>Parameters: admin, admin</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
@@ -173,9 +82,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2172240c214d47598e8716b0ab1748a5, findElement {using=xpath, value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\donat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64548}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64548/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2172240c214d47598e8716b0ab1748a5
+Command: [731fc65a3b7b88888586b4dae089038f, findElement {using=xpath, value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\donat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57609}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57609/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 731fc65a3b7b88888586b4dae089038f
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -190,21 +99,21 @@ Session ID: 2172240c214d47598e8716b0ab1748a5
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
-	at pages.Login_Page.isAlertDisplayed(Login_Page.java:42)
-	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword(LoginPage_Test.java:75)
+	at pages.Login_Page.isAlertDisplayed(Login_Page.java:37)
+	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword(LoginPage_Test.java:65)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1200522866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1200522866'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace898856002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace898856002'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-danger alert-dismissible&apos;]&quot;}
   (Session info: chrome=127.0.6533.120)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2172240c214d47598e8716b0ab1748a5, findElement {using=xpath, value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\donat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64548}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64548/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2172240c214d47598e8716b0ab1748a5
+Command: [731fc65a3b7b88888586b4dae089038f, findElement {using=xpath, value=//div[@class=&apos;alert alert-danger alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\donat\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57609}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57609/devtoo..., se:cdpVersion: 127.0.6533.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 731fc65a3b7b88888586b4dae089038f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -224,218 +133,49 @@ Session ID: 2172240c214d47598e8716b0ab1748a5
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
-	at pages.Login_Page.isAlertDisplayed(Login_Page.java:42)
-	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword(LoginPage_Test.java:75)
+	at pages.Login_Page.isAlertDisplayed(Login_Page.java:37)
+	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword(LoginPage_Test.java:65)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
 </pre></div></td>
 <td>10</td>
-<td>testScript.LoginPage_Test@2438dcd</td></tr>
+<td>testScript.LoginPage_Test@7e990ed7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+<tr>
+<td title='testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials()'><b>verifyUserIsAbleToLoginUsingValidCredentials</b><br>Test class: testScript.LoginPage_Test<br>Parameters: admin, admin</td>
+<td></td>
+<td>0</td>
+<td>testScript.LoginPage_Test@7e990ed7</td></tr>
+<tr>
+<td title='testScript.DeleteAdminUser_Test.verifyUserIsAbleToDeleteUserFromList()'><b>verifyUserIsAbleToDeleteUserFromList</b><br>Test class: testScript.DeleteAdminUser_Test<br>Test method: Verify user able to delete an admin user<br>Parameters: admin, admin</td>
+<td></td>
+<td>5</td>
+<td>testScript.DeleteAdminUser_Test@46d59067</td></tr>
 <tr>
 <td title='testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword()'><b>verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword</b><br>Test class: testScript.LoginPage_Test<br>Parameters: admin@123, admin123</td>
 <td></td>
 <td>0</td>
-<td>testScript.LoginPage_Test@2438dcd</td></tr>
-<tr>
-<td title='testScript.DeleteAdminUser_Test.verifyUserIsAbleToDeleteUserFromList()'><b>verifyUserIsAbleToDeleteUserFromList</b><br>Test class: testScript.DeleteAdminUser_Test<br>Test method: Verify user able to delete an admin user<br>Parameters: admin, admin</td>
-<td></td>
-<td>1</td>
-<td>testScript.DeleteAdminUser_Test@17d919b6</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials()'><b>verifyUserIsAbleToLoginUsingValidCredentials</b><br>Test class: testScript.LoginPage_Test<br>Parameters: admin, admin</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class org.apache.poi.xssf.usermodel.XSSFWorkbook
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(LoginPage_Test.java:37)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoSuchMethodError: &apos;java.lang.ClassLoader[] org.apache.logging.log4j.util.LoaderUtil.getClassLoaders()&apos; [in thread &quot;TestNG-test=parallelTest-1&quot;]
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getServiceProviders(ThreadContextDataInjector.java:83)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.initServiceProviders(ThreadContextDataInjector.java:73)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getProviders(ThreadContextDataInjector.java:285)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.access$000(ThreadContextDataInjector.java:55)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector$ForCopyOnWriteThreadContextMap.&lt;init&gt;(ThreadContextDataInjector.java:226)
-	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createDefaultInjector(ContextDataInjectorFactory.java:94)
-	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createInjector(ContextDataInjectorFactory.java:71)
-	at org.apache.logging.log4j.core.lookup.ContextMapLookup.&lt;init&gt;(ContextMapLookup.java:34)
-	at org.apache.logging.log4j.core.lookup.Interpolator.&lt;init&gt;(Interpolator.java:126)
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.&lt;init&gt;(AbstractConfiguration.java:129)
-	at org.apache.logging.log4j.core.config.NullConfiguration.&lt;init&gt;(NullConfiguration.java:32)
-	at org.apache.logging.log4j.core.LoggerContext.&lt;clinit&gt;(LoggerContext.java:87)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.createContext(ClassLoaderContextSelector.java:248)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(ClassLoaderContextSelector.java:212)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:136)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:123)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:117)
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:150)
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
-	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
-	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:599)
-	at org.apache.poi.ooxml.POIXMLDocumentPart.&lt;clinit&gt;(POIXMLDocumentPart.java:56)
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(LoginPage_Test.java:37)
-	... 7 more
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1815885053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1815885053'><pre>java.lang.NoClassDefFoundError: Could not initialize class org.apache.poi.xssf.usermodel.XSSFWorkbook
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(LoginPage_Test.java:37)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoSuchMethodError: &apos;java.lang.ClassLoader[] org.apache.logging.log4j.util.LoaderUtil.getClassLoaders()&apos; [in thread &quot;TestNG-test=parallelTest-1&quot;]
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getServiceProviders(ThreadContextDataInjector.java:83)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.initServiceProviders(ThreadContextDataInjector.java:73)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getProviders(ThreadContextDataInjector.java:285)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.access$000(ThreadContextDataInjector.java:55)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector$ForCopyOnWriteThreadContextMap.&lt;init&gt;(ThreadContextDataInjector.java:226)
-	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createDefaultInjector(ContextDataInjectorFactory.java:94)
-	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createInjector(ContextDataInjectorFactory.java:71)
-	at org.apache.logging.log4j.core.lookup.ContextMapLookup.&lt;init&gt;(ContextMapLookup.java:34)
-	at org.apache.logging.log4j.core.lookup.Interpolator.&lt;init&gt;(Interpolator.java:126)
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.&lt;init&gt;(AbstractConfiguration.java:129)
-	at org.apache.logging.log4j.core.config.NullConfiguration.&lt;init&gt;(NullConfiguration.java:32)
-	at org.apache.logging.log4j.core.LoggerContext.&lt;clinit&gt;(LoggerContext.java:87)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.createContext(ClassLoaderContextSelector.java:248)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(ClassLoaderContextSelector.java:212)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:136)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:123)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:117)
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:150)
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
-	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
-	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:599)
-	at org.apache.poi.ooxml.POIXMLDocumentPart.&lt;clinit&gt;(POIXMLDocumentPart.java:56)
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(LoginPage_Test.java:37)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	... 7 more
-</pre></div></td>
-<td>0</td>
-<td>testScript.LoginPage_Test@2438dcd</td></tr>
-<tr>
-<td title='testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials()'><b>verifyUserIsAbleToLoginUsingValidCredentials</b><br>Test class: testScript.LoginPage_Test<br>Parameters: admin, admin</td>
-<td><div><pre>java.lang.NoSuchMethodError: &apos;java.lang.ClassLoader[] org.apache.logging.log4j.util.LoaderUtil.getClassLoaders()&apos;
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getServiceProviders(ThreadContextDataInjector.java:83)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.initServiceProviders(ThreadContextDataInjector.java:73)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getProviders(ThreadContextDataInjector.java:285)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.access$000(ThreadContextDataInjector.java:55)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector$ForCopyOnWriteThreadContextMap.&lt;init&gt;(ThreadContextDataInjector.java:226)
-	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createDefaultInjector(ContextDataInjectorFactory.java:94)
-	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createInjector(ContextDataInjectorFactory.java:71)
-	at org.apache.logging.log4j.core.lookup.ContextMapLookup.&lt;init&gt;(ContextMapLookup.java:34)
-	at org.apache.logging.log4j.core.lookup.Interpolator.&lt;init&gt;(Interpolator.java:126)
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.&lt;init&gt;(AbstractConfiguration.java:129)
-	at org.apache.logging.log4j.core.config.NullConfiguration.&lt;init&gt;(NullConfiguration.java:32)
-	at org.apache.logging.log4j.core.LoggerContext.&lt;clinit&gt;(LoggerContext.java:87)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.createContext(ClassLoaderContextSelector.java:248)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(ClassLoaderContextSelector.java:212)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:136)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:123)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:117)
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:150)
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
-	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
-	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:599)
-	at org.apache.poi.ooxml.POIXMLDocumentPart.&lt;clinit&gt;(POIXMLDocumentPart.java:56)
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(LoginPage_Test.java:37)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace220891725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace220891725'><pre>java.lang.NoSuchMethodError: &apos;java.lang.ClassLoader[] org.apache.logging.log4j.util.LoaderUtil.getClassLoaders()&apos;
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getServiceProviders(ThreadContextDataInjector.java:83)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.initServiceProviders(ThreadContextDataInjector.java:73)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.getProviders(ThreadContextDataInjector.java:285)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector.access$000(ThreadContextDataInjector.java:55)
-	at org.apache.logging.log4j.core.impl.ThreadContextDataInjector$ForCopyOnWriteThreadContextMap.&lt;init&gt;(ThreadContextDataInjector.java:226)
-	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createDefaultInjector(ContextDataInjectorFactory.java:94)
-	at org.apache.logging.log4j.core.impl.ContextDataInjectorFactory.createInjector(ContextDataInjectorFactory.java:71)
-	at org.apache.logging.log4j.core.lookup.ContextMapLookup.&lt;init&gt;(ContextMapLookup.java:34)
-	at org.apache.logging.log4j.core.lookup.Interpolator.&lt;init&gt;(Interpolator.java:126)
-	at org.apache.logging.log4j.core.config.AbstractConfiguration.&lt;init&gt;(AbstractConfiguration.java:129)
-	at org.apache.logging.log4j.core.config.NullConfiguration.&lt;init&gt;(NullConfiguration.java:32)
-	at org.apache.logging.log4j.core.LoggerContext.&lt;clinit&gt;(LoggerContext.java:87)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.createContext(ClassLoaderContextSelector.java:248)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.locateContext(ClassLoaderContextSelector.java:212)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:136)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:123)
-	at org.apache.logging.log4j.core.selector.ClassLoaderContextSelector.getContext(ClassLoaderContextSelector.java:117)
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:150)
-	at org.apache.logging.log4j.core.impl.Log4jContextFactory.getContext(Log4jContextFactory.java:47)
-	at org.apache.logging.log4j.LogManager.getContext(LogManager.java:196)
-	at org.apache.logging.log4j.LogManager.getLogger(LogManager.java:599)
-	at org.apache.poi.ooxml.POIXMLDocumentPart.&lt;clinit&gt;(POIXMLDocumentPart.java:56)
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testScript.LoginPage_Test.verifyUserIsAbleToLoginUsingValidCredentials(LoginPage_Test.java:37)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>0</td>
-<td>testScript.LoginPage_Test@2438dcd</td></tr>
+<td>testScript.LoginPage_Test@7e990ed7</td></tr>
 </table><p>
 </body>
 </html>

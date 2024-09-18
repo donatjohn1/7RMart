@@ -26,7 +26,7 @@ public class SearchCatagory_Test extends Base{
 		  //String categoryValue=ExcelUtilities.getStringData(1,0,"SearchCategory");
 		  searchCategory.inputCategory(categoryValue);
 		  searchCategory.clickSearchButton();
-		  boolean isSearchDisplayed=searchCategory.isSearchResultDisplayed();
+		  boolean isSearchDisplayed=searchCategory.isSearchResultNotDisplayed();
 		  assertTrue(isSearchDisplayed,Constants.SEARCHCATEGORYNOTFOUND);
   }
 }

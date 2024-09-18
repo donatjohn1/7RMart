@@ -19,7 +19,7 @@ public class SearchInSubCatagoryList_Page {
 	@FindBy(xpath="//select[@id='un']")WebElement selectCatagory;
 	@FindBy(xpath="//input[@class='form-control']")WebElement subCatagoryField;
 	@FindBy(xpath="//button[@type='submit']")WebElement SearhSubCategoryButton;
-	@FindBy(xpath="//center[text()='.........RESULT NOT FOUND.......']")WebElement searchNotFound; 
+	@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']")WebElement searchFound; 
 	public void openSubCatagoryPage()
 	{
 		subCatagoryPageLink.click();
@@ -41,8 +41,8 @@ public class SearchInSubCatagoryList_Page {
 	{
 		SearhSubCategoryButton.click();
 	}
-	public boolean isSearchResultDisplayed()
+	public boolean isSearchResultNotDisplayed()
 	{
-		return searchNotFound.isDisplayed();
+		return searchFound.isDisplayed();
 	}
 }

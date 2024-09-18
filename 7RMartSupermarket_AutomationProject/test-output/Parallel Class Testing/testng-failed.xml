@@ -14,7 +14,6 @@
           <include name="verifyUserIsAbleToLoginUsingValidUsernameInvalidPassword" invocation-numbers="0"/>
           <include name="initialiseBrowser"/>
           <include name="afterMethod"/>
-          <include name="verifyUserIsAbleToLoginUsingValidCredentials" invocation-numbers="0"/>
         </methods>
       </class> <!-- testScript.LoginPage_Test -->
     </classes>
